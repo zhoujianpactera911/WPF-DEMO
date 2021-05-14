@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="300" Width="300">
+    <Grid>
+        <Rectangle Margin="100,55,103,0" Name="rectangle1" Stroke="Black" Height="60" VerticalAlignment="Top" Fill="Blue" Width="60">
+            <Rectangle.RenderTransform>
+                <RotateTransform Angle="0" CenterX="30" CenterY="30" x:Name="rotate1" />
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button Height="21" HorizontalAlignment="Left" Margin="22,0,0,38" Name="btnStart" VerticalAlignment="Bottom" Width="53">Start</Button>
+        <Button Height="21" HorizontalAlignment="Left" Margin="84,0,0,38" Name="btnPause" VerticalAlignment="Bottom" Width="53">Pause</Button>
+        <Button Height="21" HorizontalAlignment="Right" Margin="0,0,78,38" Name="btnResume" VerticalAlignment="Bottom" Width="53">Resume</Button>
+        <Button Height="21" HorizontalAlignment="Right" Margin="0,0,16,38" Name="btnStop" VerticalAlignment="Bottom" Width="53">Stop</Button>
+        <Grid.Triggers>
+            <EventTrigger SourceName="btnStart" RoutedEvent="Button.Click">
+                <EventTrigger.Actions>
+                    <BeginStoryboard x:Name="bs">
+                        <Storyboard RepeatBehavior="Forever">
+                            <DoubleAnimation
+                                 Storyboard.TargetName="rotate1"
+                                 Storyboard.TargetProperty="Angle"
+                                 From="0"
+                                 To="360"
+                                 Duration="0:0:5"
+                            />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger SourceName="btnPause" RoutedEvent="Button.Click">
+                <EventTrigger.Actions>
+                    <PauseStoryboard BeginStoryboardName="bs" />
+                </EventTrigger.Actions>
+            </EventTrigger>
+
+            <EventTrigger SourceName="btnResume" RoutedEvent="Button.Click">
+                <EventTrigger.Actions>
+                    <ResumeStoryboard BeginStoryboardName="bs" />
+                </EventTrigger.Actions>
+            </EventTrigger>
+
+            <EventTrigger SourceName="btnStop" RoutedEvent="Button.Click">
+                <EventTrigger.Actions>
+                    <StopStoryboard BeginStoryboardName="bs" />
+                </EventTrigger.Actions>
+            </EventTrigger>
+
+        </Grid.Triggers>
+    </Grid>
+</Window>

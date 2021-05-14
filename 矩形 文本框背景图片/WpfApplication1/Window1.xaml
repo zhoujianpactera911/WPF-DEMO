@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="299" Width="423">
+    <Grid>
+        <Rectangle HorizontalAlignment="Right" Margin="0,17,8,71" Name="rectangle3" Stroke="Black" Width="184">
+            <Rectangle.Fill>
+                <VisualBrush Visual="{Binding ElementName=grid1}" />
+            </Rectangle.Fill>
+        </Rectangle>
+        <Grid Margin="11,19,0,71" Name="grid1" HorizontalAlignment="Left" Width="185">
+            <TextBox Margin="0,52,16,69" Name="textBox1" FontSize="36" Background="Yellow" BorderBrush="Red" BorderThickness="7" FontFamily="Arial Bold" TextChanged="textBox1_TextChanged">
+                <TextBox.Foreground>
+                    <ImageBrush ImageSource="C:\Windows\Blue Lace 16.bmp" />
+                </TextBox.Foreground>
+            </TextBox>
+            <Rectangle Margin="5,7,16,0" Name="rectangle1" Stroke="Black" Height="42" VerticalAlignment="Top" StrokeThickness="0">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{Binding ElementName=textBox1}">
+                        <VisualBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                <TranslateTransform Y="1" />
+                            </TransformGroup>
+                        </VisualBrush.RelativeTransform>
+                    </VisualBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle Margin="5,0,16,25" Name="rectangle2" Stroke="Black" StrokeThickness="0" Height="41" VerticalAlignment="Bottom">
+                <Rectangle.Fill>
+                    <VisualBrush Visual="{Binding ElementName=textBox1}">
+                        <VisualBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1" ScaleY="-1" />
+                                <TranslateTransform Y="1" />
+                            </TransformGroup>
+                        </VisualBrush.RelativeTransform>
+                    </VisualBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\bin\Debug\InkCanvasDemo.exe
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\bin\Debug\InkCanvasDemo.pdb
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\Window1.baml
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\Window1.g.cs
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\App.g.cs
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\InkCanvasDemo_MarkupCompile.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\InkCanvasDemo.g.resources
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\InkCanvasDemo.Properties.Resources.resources
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\InkCanvasDemo.csproj.GenerateResource.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\InkCanvasDemo.csproj.CoreCompileInputs.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\InkCanvasDemo.exe
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\12\InkCanvasDemo\obj\Debug\InkCanvasDemo.pdb

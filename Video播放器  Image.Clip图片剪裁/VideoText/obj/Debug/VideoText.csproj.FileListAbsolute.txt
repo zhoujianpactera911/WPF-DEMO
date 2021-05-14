@@ -1,0 +1,13 @@
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\bin\Debug\xbox.wmv
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\bin\Debug\SDKSample.exe
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\bin\Debug\SDKSample.pdb
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\VideoText.csprojAssemblyReference.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\Window1.baml
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\Window1.g.cs
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\app.g.cs
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\SDKSample_Content.g.cs
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\SDKSample_MarkupCompile.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\SDKSample.g.resources
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\VideoText.csproj.CoreCompileInputs.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\SDKSample.exe
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\10\VideoText\obj\Debug\SDKSample.pdb

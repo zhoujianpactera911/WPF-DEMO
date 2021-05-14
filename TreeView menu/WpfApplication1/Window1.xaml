@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:Demo"
+    Title="Window1" Height="300" Width="300">
+    <Grid>
+        <Grid.Resources>
+            <ObjectDataProvider x:Key="dso" ObjectType="{x:Type src:LeagueList}" />
+
+            <HierarchicalDataTemplate
+                DataType="{x:Type src:League}"
+                ItemsSource="{Binding Path=Divisions}"
+                >
+                <TextBlock Text="{Binding Path=Name}" />
+            </HierarchicalDataTemplate>
+
+            <HierarchicalDataTemplate
+                DataType="{x:Type src:Division}"
+                ItemsSource="{Binding Path=Teams}"
+                >
+                <TextBlock Text="{Binding Path=Name}" />
+            </HierarchicalDataTemplate>
+            
+            <DataTemplate
+                DataType="{x:Type src:Team}"
+                >
+                <TextBlock Text="{Binding Path=Name}" />
+            </DataTemplate>
+            
+        </Grid.Resources>
+        <TreeView Margin="20,61,24,52" Name="treeView1">
+            <TreeViewItem Header="Demo #1"   
+                   ItemsSource="{Binding Source={StaticResource dso}}"
+                          />
+        </TreeView>
+        <Menu Height="22" Margin="24,17,54,0" Name="menu1" VerticalAlignment="Top">
+            <MenuItem Header="Demo #2" 
+                   ItemsSource="{Binding Source={StaticResource dso}}" 
+                      />
+        </Menu>
+    </Grid>
+</Window>

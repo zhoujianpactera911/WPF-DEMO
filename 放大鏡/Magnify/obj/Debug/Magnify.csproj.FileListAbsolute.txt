@@ -1,0 +1,25 @@
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\bin\Debug\Magnify.exe
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\bin\Debug\Magnify.pdb
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\ResolveAssemblyReference.cache
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\Window1.baml
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\Window1.g.cs
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\MyApp.g.cs
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\Magnify_MarkupCompile.cache
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\Magnify.g.resources
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\Magnify.Properties.Resources.resources
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\Magnify.csproj.GenerateResource.Cache
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\Magnify.exe
+E:\Documents and Settings\fangxing\デスクトップ\WPF\MSDF WPF\DEMO\06\Magnify\obj\Debug\Magnify.pdb
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\bin\Debug\Magnify.exe
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\bin\Debug\Magnify.pdb
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Magnify.csprojAssemblyReference.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Window1.baml
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Window1.g.cs
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\MyApp.g.cs
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Magnify_MarkupCompile.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Magnify.g.resources
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Magnify.Properties.Resources.resources
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Magnify.csproj.GenerateResource.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Magnify.csproj.CoreCompileInputs.cache
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Magnify.exe
+C:\Users\v-zhojia\Downloads\DEMO\DEMO\06\Magnify\obj\Debug\Magnify.pdb

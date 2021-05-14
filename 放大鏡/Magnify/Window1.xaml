@@ -1,0 +1,95 @@
+﻿<Window x:Class="Magnify.Window1"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Title="放大鏡" Width="400" Height="400" WindowStartupLocation="CenterScreen">
+    <Grid 
+      PreviewMouseMove="OnMoveOverMainUI" 
+      VerticalAlignment="Center" 
+      Margin="10">
+        <Grid Name="mainUI" >
+
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+          </Grid.ColumnDefinitions>
+          
+          <StackPanel Grid.ColumnSpan="3" Orientation="Horizontal" Margin="0,0,0,20">
+            <TextBlock FontSize="20" Margin="5">放大區域大小:</TextBlock>
+                <TextBox FontSize="20" Name="txtTargetSize" Text="50" TextChanged="ZoomChanged" />
+            </StackPanel>
+          <Slider Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="3" Name="sliderTargetSize" Margin="0,20,0,30"
+                              Value="{Binding ElementName=txtTargetSize,Path=Text}"
+                              Minimum="2" Maximum="400" Width="400" />
+            <CheckBox FontSize="20" Grid.Row="2" Grid.ColumnSpan="3" Name="checkEnableMagnifier" IsChecked="False"
+                      HorizontalAlignment="Center" Margin="0,30" >
+                啓動放大鏡
+            </CheckBox>
+            <TextBlock FontSize="20" Grid.Row="3" Grid.ColumnSpan="3" FontFamily="Palatino Linotype" TextWrapping="Wrap" Margin="0,20,0,20">
+                請使用上面的核取方塊來啓動或關閉放大鏡，
+                使用橫桿來調整放大的區域大小。
+            </TextBlock>
+            <Button Grid.Row="4" Grid.Column="2" Click="ExitClick">
+              <AccessText>E_xit</AccessText>
+            </Button>
+        </Grid>
+        <Canvas HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Canvas Name="magnifierCanvas" Visibility="Hidden">
+                <Line StrokeThickness="30" X1="200" Y1="200" X2="300" Y2="300">
+                    <Line.Stroke>
+                        <LinearGradientBrush StartPoint="0.78786,1" EndPoint="1,0.78786">
+                                <GradientStop Offset="0" Color="DarkGreen" />
+                                <GradientStop Offset="0.9" Color="LightGreen" />
+                                <GradientStop Offset="1" Color="Green" />
+                        </LinearGradientBrush>
+                    </Line.Stroke>
+                </Line>
+                <Path Fill="White" StrokeThickness="3" Width="250" Height="250">
+                    <Path.Data>
+                        <GeometryGroup>
+                            <EllipseGeometry RadiusX="125" RadiusY="125" Center="125,125" />
+                            <EllipseGeometry RadiusX="1" RadiusY="1" Center="125,125" />
+                        </GeometryGroup>
+                    </Path.Data>
+                </Path>
+                <Path Width="250" Height="250" Name="magnifierEllipse">
+                    <Path.Fill>
+                        <VisualBrush ViewboxUnits="Absolute" Viewbox="0,0,50,50"
+                                     ViewportUnits="RelativeToBoundingBox" Viewport="0,0,1,1"/>
+                    </Path.Fill>
+                    <Path.Data>
+                        <GeometryGroup>
+                            <EllipseGeometry RadiusX="125" RadiusY="125" Center="125,125" />
+
+                          <!-- 在放大鏡中間放一個小洞，這樣滑鼠才可以點到表單上的控制項 -->
+                            <EllipseGeometry RadiusX="1" RadiusY="1" Center="125,125" />
+                        </GeometryGroup>
+                    </Path.Data>
+                </Path>
+              <Ellipse StrokeThickness="3" Width="250" Height="250">
+                <Ellipse.Stroke>
+                  <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                      <GradientStop Color="#aaa" Offset="0" />
+                      <GradientStop Color="#111" Offset="1" />
+                  </LinearGradientBrush>
+                </Ellipse.Stroke>
+              </Ellipse>
+              <Ellipse Canvas.Left="2" Canvas.Top="2" StrokeThickness="4" Width="246" Height="246">
+                <Ellipse.Stroke>
+                  <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                      <GradientStop Color="#555" Offset="0" />
+                      <GradientStop Color="#eee" Offset="1" />
+                  </LinearGradientBrush>
+                </Ellipse.Stroke>
+              </Ellipse>
+            </Canvas>
+        </Canvas>
+    </Grid>
+</Window>

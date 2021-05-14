@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    MouseDown="Window_MouseDown"
+    MouseMove="Window_MouseMove"
+    Title="Window1" Height="300" Width="300" Opacity="0.5" AllowsTransparency="True" WindowStyle="None">
+    <Grid>
+        <Ellipse Margin="25,57,109,0" Name="ellipse1" Stroke="Black" Height="72" VerticalAlignment="Top" Fill="Red" Opacity="1" />
+        <Ellipse Margin="87,73,55,94" Name="ellipse2" Stroke="Black" Fill="Blue" Opacity="0.6" />
+        <Ellipse Height="100" Margin="113,21,55,0" Name="ellipse3" Stroke="Black" VerticalAlignment="Top" Fill="Lime" Opacity="0.5" />
+        <Rectangle Width="150" Height="100" Fill="Gray" Margin="10,20,30,40" Opacity="0.7" />
+    </Grid>
+</Window>
